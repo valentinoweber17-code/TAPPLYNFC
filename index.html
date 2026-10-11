@@ -32,12 +32,12 @@
 <script>
 // CONFIGURACIÓN: reemplazá el número por tu WhatsApp en formato internacional, sin +, espacios ni guiones.
 // Ejemplo de formato argentino: 5492611234567. No uses el número de ejemplo como si fuera tuyo.
-const WHATSAPP_NUMBER = "5492610000000";
+const WHATSAPP_NUMBER = "5492613734324";
 const BRAND = "TAPLYNFC";
 function makeWaUrl(message){return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;}
 document.querySelectorAll('.order').forEach(btn=>btn.addEventListener('click',()=>{
  const msg=`Hola ${BRAND}, quiero consultar por: ${btn.dataset.product}. Precio publicado/de referencia: ${btn.dataset.price}.\n\nNombre del negocio:\nEnlace para NFC/QR:\nCantidad:\nCiudad y provincia para el envío:\nNombre de contacto:\n¿Necesito factura? (consultar)`;
- if(WHATSAPP_NUMBER==="5492610000000"){alert("Antes de usar la tienda, reemplazá WHATSAPP_NUMBER en el código por tu número real de WhatsApp (con código de país y área). Después probá el botón otra vez.");return;}
+ if(WHATSAPP_NUMBER==="5492613734324"){alert("Antes de usar la tienda, reemplazá WHATSAPP_NUMBER en el código por tu número real de WhatsApp (con código de país y área). Después probá el botón otra vez.");return;}
  window.open(makeWaUrl(msg),'_blank','noopener');
 }));
 document.querySelectorAll('.wa-link').forEach(a=>a.addEventListener('click',e=>{
